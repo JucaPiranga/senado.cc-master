@@ -1,0 +1,41 @@
+== Senado.cc
+
+Aplicativo para republicação e visualização dos dados do portal de transparência do Senado Federal do Brasil.
+
+=== Dados Técnicos
+
+A aplicação está sendo desenvolvida com as seguintes ferramentas e versões:
+
+* Ruby 2.0
+
+* Rails 4.0
+
+* SQlite
+
+Tentamos ao máximo manter a aplicação e suas dependências simples, tornando ela mais fácil de ser reutilizada. Utilizamos vanilla SQL, tornando fácil a substituição do banco de dados por um de sua preferência.
+
+
+=== Instalação
+
+1) Clone este repositório:
+
+git clone git@github.com:dataviz/senado.cc.git
+
+2)Instale as dependências:
+
+bundle install
+
+3)Rode as migrações do banco de dados
+
+rake db:migrate
+
+4) Carregue os dados no banco
+
+rake db:seed
+
+5)Inicie a aplicação
+
+rails s
+
+--
+2013 · dataviz.com.br · Domínio Público

@@ -1,0 +1,138 @@
+$green: #2ECC71;
+$deep-green: #27AE60;
+$yellow: #F1C40F;
+$blue: #2980B9;
+$clouds: #ECF0F1;
+$link: #3498DB;
+$silver: #BDC3C7;
+$red: #E74C3C;
+$black: #2C3E50;
+
+
+@mixin border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $silver;
+  padding-top: 75px;
+}
+
+body,
+label,
+input,
+select,
+textarea,
+h1, h2, h3, h4, h5, h6,
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+  margin-top: 95px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+  float: left;
+  margin: .5em 0;
+  font-weight: bolder;
+}
+
+header.header {
+  background: $black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  z-index: 1;
+  nav {
+    text-align: right;
+    line-height: 75px;
+    a {
+      margin-left: 2em;
+    }
+  }
+}
+
+.header a,
+.showcase a {
+  color: $yellow;
+}
+
+.footer {
+  padding: 3em 0;
+  text-align: center;
+  color: #888;
+}
+
+.showcase {
+  background-attachment: fixed;
+  background-color: $black;
+  background-image: url(/assets/senado.png);
+  background-position: center -140px;
+  background-repeat: no-repeat;
+  padding: 6em 0;
+  h3 {
+    margin: 0 auto;
+    font-size: 3em;
+    line-height: 1.3em;
+    max-width: 70%;
+    color: white;
+    text-align: center;
+  }
+}
+.content {
+  font-size: 1.25em;
+  p,
+  dt,
+  dd {
+    color: lighten($black, 10%);
+    margin-bottom: 1.25em;
+  }
+}
+.form,
+.data-download {
+  margin-bottom: 1em;
+}
+.data-download {
+  margin-top: 85px;
+}
+
+.datagrid {
+  .header.currency {
+    white-space: nowrap;
+  }
+  .currency {
+    text-align: right;
+    letter-spacing: 1px;
+    padding: .5em;
+    /*display: inline-block;*/
+  }
+  .pagination {
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+}
+.filter-by-query,
+.pagination {
+  text-align: right;
+}
+.pagination > li {
+  display: inline-block;
+}
+
+.main {
+  background: white;
+}

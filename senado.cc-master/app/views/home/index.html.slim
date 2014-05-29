@@ -1,0 +1,46 @@
+.showcase
+  .container
+    h3
+      | Aplicativo para republicação e visualização dos dados do portal de transparência do #{link_to 'Senado Federal do Brasil', 'http://www.senado.gov.br/', target: '_blank'}.
+
+= render 'reasoning'
+= render 'faq'
+= render 'data'
+= render 'contact'
+
+/
+  .code-share-clipping
+    .container
+      .row.social-sharing.content-row#share
+        .span8
+          h2
+            | Gostei. Quero compartilhar!
+          p
+            | Ajude a espalhar o projeto para o maior número possível de pessoas!
+          p
+            = image_tag 'proto/like-box-count.png'
+            = image_tag 'proto/tweet-box-count.png'
+            = image_tag 'proto/gplus-box-count.png'
+        .span4.centered
+          span.icon-rocket.icon-huge
+      .row.project-hosting.content-row#code
+        .span8
+          h2
+            | E… posso contribuir de alguma maneira?
+          p
+            | Claro! O projeto tem o #{link_to 'código aberto no github', 'https://github.com/dataviz/senado.cc', target: '_blank'} e você pode #{link_to 'contribuir com código', 'https://github.com/dataviz/senado.cc', target: '_blank'}, #{link_to 'apontar sugestões ou erros', 'https://github.com/dataviz/senado.cc/issues', target: '_blank'} ou simplesmente #{link_to 'compartilhar no facebook', '#'}.
+          p
+            | Você também pode ajudar #{link_to 'solicitando as informações para o Senado Federal', '#'} e nos mandando o resultado.
+        .span4.centered
+          span.icon-github.icon-huge
+      .row.clipping.content-row#clipping
+        .span8
+          h2
+            | Fomos notícia!
+          p
+            | Alguns veículos que divulgaram nosso projeto:
+          p
+            = link_to 'http://colunaesplanada.blogosfera.uol.com.br/2013/06/20/internauta-lanca-site-com-nomes-e-salarios-de-servidores-do-senado/', target: '_blank' do
+              = image_tag 'news/uol.png'
+        .span4.centered
+          span.icon-paper-clip.icon-huge
